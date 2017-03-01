@@ -306,7 +306,7 @@ lab2.controller('player2', function(processMove, $rootScope, $scope, $ionicModal
       }
       else {
         $ionicViewSwitcher.nextDirection('forward');
-        /* TODO: Transition to player1 state since neither player has 2/3 */
+        /* TODO: Transition to player1 state since neither player has 2/3. */
         $state.go('player1', {
           'player1_wins': $stateParams.player1_wins,
           'player2_wins': $stateParams.player2_wins
